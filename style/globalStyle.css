@@ -6,3 +6,38 @@ html {
     --yellow-color : #f8df00;
     --yellow2-color : #f4e500;
 }
+
+header {
+    display: flex;              
+    align-items: center;         
+    justify-content: space-between; 
+    padding: 0 20px;             
+    height: 100px;              
+    background-color: white;     
+}
+
+#Logo{
+    width: 221px;
+    height: 91px;   
+    margin-right: 10px;
+}
+
+h1{
+    font-family: Helvetica Neue, Regular;
+}
+
+.HeaderLinks {
+    display: flex;                
+    gap: 10px;                    
+}
+
+.HeaderLinks a{
+    
+    font: normal normal bold 22px/110px Albert Sans;
+    border: none;
+    background-color: white;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    padding: 5px 10px;
+}
