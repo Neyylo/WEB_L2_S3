@@ -1,0 +1,51 @@
+#shops_cards {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    margin: var(--margin);
+}
+
+#shop_cards_title {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+
+#shop_cards_button {
+    position: relative;
+    top: 150px;
+}
+
+#shop_cards_body {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    margin: inherit var(--margin);
+}
+
+.shop_cards_buttons {
+    padding: 20px 0;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: end;
+    color: white;
+    background-color: rgba(0,0,0,0.1);
+}
+
+.shop_cards_buttons:hover {
+    background-color: var(--red-color);
+}
+
+.shop_cards_buttons img {
+    width: 84px;
+    height: 84px;
+    margin: auto 0;
+}
+
+#shop_cards_bottom_text {
+    text-align: center;
+    color: white;
+    font-size: 30px;
+    margin-top: 55px;
+}

@@ -5,4 +5,79 @@ html {
     --red-color : #ec1c24;
     --yellow-color : #f8df00;
     --yellow2-color : #f4e500;
+    --margin : 10vw;
+}
+
+body {
+    background: url("../img/724d.png") no-repeat fixed center;
+    background-size: cover;
+    font-family: 'Albert Sans', Arial, sans-serif;
+}
+
+h2 {
+    font-family: 'Albert Sans', Arial, sans-serif;
+    font-size: 70px;
+    letter-spacing: 0;
+    line-height: 60px;
+    color: #fff;
+}
+
+button {
+    border: none;
+    outline: none;
+    background: none;
+    font-family: 'Albert Sans', Arial, sans-serif;
+    font-weight: bold;
+}
+
+
+
+.button {
+    width: 324px;
+    height: 48px;
+    border-radius: 10px;
+    background-color: white;
+    font-size: 20px;
+}
+
+.card {
+    width: 211px;
+    height: 211px;
+    border: 5px solid white;
+    border-radius: 18px;
+    font-size: 22px;
+}
+
+.button-animation {
+    transform: scale(1);
+    transition: 0.3s all;
+}
+
+.button-animation:hover {
+    transform: scale(1.037);
+    transition: 0.3s all;
+}
+
+.card-animation {
+    transition: 0.3s all;
+    translate: 0 0;
+}
+
+.card-animation:hover {
+    transition: 0.3s all;
+    translate: 0 -10px;
+}
+
+.whitebg-redfont {
+    color: var(--red-color);
+    background-color: white;
+}
+
+.outline-title {
+    color: transparent;
+    -webkit-text-stroke: 3px white;
+}
+
+.bold-text {
+    font-weight: bold;
 }
