@@ -1,7 +1,7 @@
 #footer {
     display: flex;
     flex-flow: column nowrap;
-    margin: 96px var(--margin) 0 var(--margin);
+    padding: 96px var(--margin) 0 var(--margin);
     font-family: 'Albert Sans', 'Arial', sans-serif;
     background-color: white;
 }
