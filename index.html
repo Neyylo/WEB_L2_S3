@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style/globalStyle.css">
+    <link rel="stylesheet" href="./style/news.css">
     <title>Projet Intégration</title>
 </head>
 <body>
@@ -47,7 +48,27 @@
     <!-- ------------------------------------------------------>
     <!-- --------------- NEWS AND EVENTS SLIDER -------------->
     <!-- ------------------------------------------------------>
-    <div id="news_and_events_slider"></div>
+    <div id="news">
+        <div id="news_header">
+            <div id="news_title">
+                <h2>Actus &</h2>
+                <h2><span class="outline-title">bons plans</span></h2>
+            </div>
+            <div id="news_controls">
+                <button class="button button-animation whitebg-redfont"><a href="#" class="red-text">Toutes les actus & bons plans</a></button>
+                <div id="news_slider_controls">
+                    <input type="range" min="0" max="100" value="0" id="news_slider_range" disabled>
+                    <div>
+                        <button id="news_slider_left_arrow" news_slider_change="-1"><img src="/img/Icon%20awesome-arrow-left.svg" alt=""></button>
+                        <button id="news_slider_right_arrow" news_slider_change="1"><img src="/img/Icon%20awesome-arrow-left-1.svg" alt=""></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="news_slider">
+            <img src="/img/Groupe%20100.png" alt="Image des actus et bons plans">
+        </div>
+    </div>
     <!-- ------------------------------------------------------>
     <!-- ----------- END NEWS AND EVENTS SLIDER -------------->
     <!-- ------------------------------------------------------>
@@ -89,4 +110,5 @@
     <!-- ------------------------------------------------------>
 
 </body>
-</html>Neyylo/L2WEB_int-gration
+<script src="/js/newsSlider.js"></script>
+</html>
