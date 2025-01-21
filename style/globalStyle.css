@@ -1,43 +1,123 @@
-@import url("https://use.typekit.net/tcb2lfl.css"); /* 'Brush Script MT' font */
-@import url('https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,100..900;1,100..900&display=swap'); /* 'Albert Sans' font */
+/* Import des polices */
+@import url('https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
-html {
-    --red-color : #ec1c24;
-    --yellow-color : #f8df00;
-    --yellow2-color : #f4e500;
+/* Variables */
+:root {
+    --yellow-color: #f8df00;
 }
 
+/* Header */
 header {
     display: flex;              
     align-items: center;         
     justify-content: space-between; 
-    padding: 0 20px;             
+    padding: 0 40px;             
     height: 100px;              
     background-color: white;     
 }
 
-#Logo{
+#Logo {
     width: 221px;
     height: 91px;   
-    margin-right: 10px;
-}
-
-h1{
-    font-family: Helvetica Neue, Regular;
 }
 
 .HeaderLinks {
     display: flex;                
-    gap: 10px;                    
+    gap: 60px; /* Grand espace entre les liens */              
 }
 
-.HeaderLinks a{
-    
-    font: normal normal bold 22px/110px Albert Sans;
-    border: none;
-    background-color: white;
-    color: black;
-    text-align: center;
+.HeaderLinks a {
+    font-family: 'Albert Sans', sans-serif;
+    font-weight: bold;
+    font-size: 18px;
     text-decoration: none;
-    padding: 5px 10px;
+    color: black;
+    white-space: nowrap;
+}
+
+/* Bouton des horaires */
+.yellow-btn {
+    background-color: var(--yellow-color);
+    border: none;
+    padding: 12px 20px;
+    border-radius: 5px;
+    font-family: 'Albert Sans', sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 0 30px;
+    white-space: nowrap;
+}
+
+/* Barre de recherche */
+#searchBar {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+#searchIcon {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+}
+
+#searchIcon img {
+    width: 24px;
+    height: 24px;
+}
+
+#searchInput {
+    position: absolute;
+    right: 40px;
+    width: 0;
+    opacity: 0;
+    padding: 8px 12px;
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+    transition: width 0.3s ease, opacity 0.3s ease;
+    font-family: 'Albert Sans', sans-serif;
+    pointer-events: none; /* Empêcher l'interaction quand non visible */
+}
+
+#searchInput.expanded {
+    width: 200px;
+    opacity: 1;
+    pointer-events: auto; /* Permet l'interaction une fois étendu */
+}
+
+/* Dropdown des horaires */
+#hoursDropdown {
+    position: absolute;
+    top: 80px;
+    right: 80px;
+    background-color: white;
+    padding: 15px;
+    border: 1px solid #e0e0e0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    z-index: 1000;
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    pointer-events: auto; /* Permet l'interaction */
+}
+
+#hoursDropdown.hidden {
+    opacity: 0;
+    transform: translateY(-10px);
+    pointer-events: none;  /* Empêche l'interaction avec l'élément caché */
+}
+
+/* Bandeau noir */
+#SpecialAnnouncement {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 12px 0;
+    font-family: 'Albert Sans', sans-serif;
+    font-size: 16px;
 }
