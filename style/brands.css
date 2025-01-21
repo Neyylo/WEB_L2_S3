@@ -1,0 +1,28 @@
+#brands {
+    background-color: var(--red-color);
+    padding-top: 300px;
+}
+
+#brands_scrollbar {
+    display: flex;
+    flex-flow: row nowrap;
+    overflow-x: auto;
+    padding: 26px;
+}
+
+#brands_scrollbar::-webkit-scrollbar {
+    display: none;
+}
+
+#brands_scrollbar a {
+    margin-right: 26px;
+}
+
+#brands_scrollbar img {
+    transition: 0.3s transform ease;
+}
+
+#brands_scrollbar img:hover {
+    transform: scale(1.1);
+    transition: 0.3s transform ease;
+}
