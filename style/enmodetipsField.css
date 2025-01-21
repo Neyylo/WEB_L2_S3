@@ -1,0 +1,38 @@
+#enmodetips_field {
+    margin: 0 var(--margin);
+}
+
+#enmodetips_fieldset {
+    background-color: var(--yellow-color);
+    border: none;
+    border-radius: 15px;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+
+#enmodetips_fieldset legend {
+    color: white;
+    -webkit-text-stroke: 3px black;
+    font-size: 58px;
+    font-weight: 900;
+    font-style: italic;
+    text-align: left;
+    text-shadow: black 0 0 5px;
+    margin-left: 58px;
+}
+
+#enmodetips_fieldset h3 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+#enmodetips_fieldset input {
+    background-color: var(--yellow-color);
+    margin-bottom: 30px;
+}
+
+#enmodetips_fieldset p {
+    text-align: center;
+    margin: 0 20% 5% 20%;
+}
