@@ -2,7 +2,7 @@
     display: flex;
     flex-flow: column nowrap;
     justify-content: space-between;
-    margin: var(--margin);
+    margin: 20px var(--margin);
 }
 
 #shop_cards_title {
