@@ -5,4 +5,79 @@ html {
     --red-color : #ec1c24;
     --yellow-color : #f8df00;
     --yellow2-color : #f4e500;
+    --margin : 15vw;
+}
+
+body {
+    font-family: 'Albert Sans', Arial, sans-serif;
+    margin: 0;
+}
+
+h2 {
+    font-family: 'Albert Sans', Arial, sans-serif;
+    font-size: 70px;
+    font-weight: 900;
+    letter-spacing: 0;
+    line-height: 15px;
+    color: white;
+}
+
+h3 {
+    font-family: 'Albert Sans', Arial, sans-serif;
+    font-size: 50px;
+    font-weight: 900;
+    letter-spacing: 0;
+    line-height: 60px;
+    color: black;
+}
+
+button {
+    border: none;
+    outline: none;
+    background: none;
+    font-family: 'Albert Sans', Arial, sans-serif;
+    font-weight: bold;
+}
+
+.button {
+    width: 324px;
+    height: 48px;
+    border-radius: 10px;
+    background-color: white;
+    font-size: 20px;
+}
+
+.whitebg-redfont {
+    color: var(--red-color);
+    background-color: white;
+}
+
+.outline-title {
+    color: transparent;
+    -webkit-text-stroke: 3px white;
+}
+
+.bold-text {
+    font-weight: bold;
+}
+
+.red-text {
+    color: var(--red-color);
+}
+
+strong {
+    font-weight: bold;
+    font-size: 24px;
+    margin-bottom: 16px;
+}
+
+.hashtag-text {
+    font-weight: bolder ;
+    font-style: italic;
+    font-size: 28px;
+}
+
+a {
+    color: black;
+    text-decoration: none;
 }
