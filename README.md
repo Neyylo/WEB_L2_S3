@@ -9,7 +9,7 @@ Branches :
 - Header: Nolan
 - Floating SN: Nolan
 - Slider Big: Nolan
-- General Cards: Nolan
+- Informational Cards: Nolan
 - Slider Actus & Bons plans: Nolan
 - Boutique Cards: Martin
 - #enmodetips Field: Martin
