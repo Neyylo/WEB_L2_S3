@@ -1,0 +1,60 @@
+
+#informational_cards {/* Flex box */
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh; /* Prend minimum toute la hauteur écran */
+    margin: 0;
+    padding: 0;
+}
+
+/* Conteneur cartes avec fond rouge */
+#general_cards_body {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 35px; /* Espace entre cartes */
+    margin: 0;
+    padding: 80px 0 100px 0; /* Espacement haut et bas section rouge */
+    background-color: #E4001B;
+    width: 100vw; /* Prend toute largeur écran */
+    min-height: 50vh; /* Hauteur minimum de 50% de l'écran */
+}
+
+/* Style cartes */
+.general_cards_buttons {
+    padding: 20px;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: space-between;
+    width: 158px; /* Largeur fixe cartes */
+    height: 158px; /* Hauteur fixe cartes */
+    color: white; /* Couleur du texte en blanc */
+    background-color: transparent; /* Fond transparent */
+    border: 3px solid white; /* Bordure cartes blanc fine */
+    border-radius: 18px; /* Coins arrondis */
+    transition: all 0.3s ease-in-out; /* Animation douce */
+    cursor: pointer; /* Curseur forme de pointeur survol */
+}
+
+/* Effets survol des cartes */
+.general_cards_buttons:hover {
+    background-color: white; /* Fond blanc survol */
+    color: black; /* Texte noir survol */
+    transform: translateY(-8px); /* Déplace carte vers le haut */
+}
+
+/* Style images dans les cartes */
+.general_cards_buttons img {
+    width: 75px; /* Largeur icônes */
+    height: 75px; /* Hauteur icônes */
+    filter: brightness(0) saturate(100%) invert(100%); /* Rend icônes blanches */
+}
+
+/* Style images survol */
+.general_cards_buttons:hover img {
+    filter: brightness(0) saturate(100%) invert(23%) sepia(100%) saturate(4196%) hue-rotate(355deg) brightness(103%) contrast(100%); /* Rend les icônes rouges au survol */
+}
