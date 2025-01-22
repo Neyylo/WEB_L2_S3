@@ -24,6 +24,7 @@ header {
 .HeaderLinks {
     display: flex;                
     gap: 60px; /* Grand espace entre les liens */              
+    align-items: center; /* Alignement vertical au centre */
 }
 
 .HeaderLinks a {
@@ -49,67 +50,70 @@ header {
     white-space: nowrap;
 }
 
-/* Barre de recherche */
-#searchBar {
-    position: relative;
-    display: flex;
-    align-items: center;
-}
-
-#searchIcon {
-    background: none;
-    border: none;
-    cursor: pointer;
-    padding: 10px;
-    display: flex;
-    align-items: center;
-}
-
-#searchIcon img {
-    width: 24px;
-    height: 24px;
-}
-
-#searchInput {
-    position: absolute;
-    right: 40px;
-    width: 0;
-    opacity: 0;
-    padding: 8px 12px;
-    border: 1px solid #e0e0e0;
-    border-radius: 5px;
-    transition: width 0.3s ease, opacity 0.3s ease;
-    font-family: 'Albert Sans', sans-serif;
-    pointer-events: none; /* Empêcher l'interaction quand non visible */
-}
-
-#searchInput.expanded {
-    width: 200px;
-    opacity: 1;
-    pointer-events: auto; /* Permet l'interaction une fois étendu */
-}
-
 /* Dropdown des horaires */
 #hoursDropdown {
     position: absolute;
-    top: 80px;
-    right: 80px;
+    top: calc(100px + 12px); /* Ajusté pour s’afficher sous le header */
+    right: 40px; /* Aligné avec le bouton jaune */
     background-color: white;
     padding: 15px;
     border: 1px solid #e0e0e0;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 5px;
     z-index: 1000;
-    opacity: 1;
-    transform: translateY(0);
+    min-width: 180px;
+    opacity: 0; /* Caché par défaut */
+    transform: translateY(-10px);
+    pointer-events: none; /* Désactive les interactions quand caché */
     transition: opacity 0.3s ease, transform 0.3s ease;
-    pointer-events: auto; /* Permet l'interaction */
 }
 
-#hoursDropdown.hidden {
+#hoursDropdown.show {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto; /* Interaction activée */
+}
+
+/* Barre de recherche */
+#searchBar {
+    display: flex;
+    align-items: center;
+    position: relative;
+    gap: 15px;
+    transition: width 0.3s ease; /* Transition fluide */
+}
+
+#searchInput {
+    flex: 0; /* N’occupe pas d’espace au départ */
+    max-width: 0;
+    overflow: hidden;
     opacity: 0;
-    transform: translateY(-10px);
-    pointer-events: none;  /* Empêche l'interaction avec l'élément caché */
+    padding: 8px 12px;
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+    transition: max-width 0.3s ease, opacity 0.3s ease;
+    font-family: 'Albert Sans', sans-serif;
+}
+
+#searchInput.expanded {
+    flex: 1; /* Étend l’espace utilisé */
+    max-width: 200px; /* Largeur maximum définie */
+    opacity: 1;
+}
+
+/* Icone de loupe */
+#searchIcon {
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+#searchIcon img {
+    width: 24px;
+    height: 24px;
 }
 
 /* Bandeau noir */
