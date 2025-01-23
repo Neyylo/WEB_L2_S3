@@ -29,7 +29,39 @@
     <!-- ------------------------------------------------------>
     <!-- -------------------- MAIN SLIDER -------------------->
     <!-- ------------------------------------------------------>
-    <div id="main_slider"></div>
+    <div id="main_slider">
+        <div class="slider-container">
+            <div class="slider" id="slider">
+                <!-- Duplique dernière image avant première pour créer effet infini -->
+                <div class="slide">
+                    <img src="img/img_mockup-site_2 (1).png" alt="Image 3 Duplicate" class="slider-image">
+                </div>
+                <!-- Slide 1 -->
+                <div class="slide">
+                    <img src="img/img_mockup-site_2 (1).png" alt="Image 1" class="slider-image">
+                </div>
+                <!-- Slide 2 -->
+                <div class="slide">
+                    <img src="img/extended_image_left.png" alt="Image 2" class="slider-image">
+                </div>
+                <!-- Slide 3 -->
+                <div class="slide">
+                    <img src="img/img_mockup-site_2 (1).png" alt="Image 3" class="slider-image">
+                </div>
+                <!-- Duplique première image après dernière pour créer effet infini -->
+                <div class="slide">
+                    <img src="img/img_mockup-site_2 (1).png" alt="Image 1 Duplicate" class="slider-image">
+                </div>
+            </div>
+            <!-- Point navigation -->
+            <div class="navigation-dots" id="navigation-dots">
+                <span class="dot active"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
+        </div>
+    </div>
+    
     <!-- ------------------------------------------------------>
     <!-- ----------------- END MAIN SLIDER ------------------->
     <!-- ------------------------------------------------------>
@@ -87,6 +119,6 @@
     <!-- ------------------------------------------------------>
     <!-- -------------------- END FOOTER --------------------->
     <!-- ------------------------------------------------------>
-
+    <script src="./js/script.js"></script>
 </body>
 </html>
