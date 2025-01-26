@@ -1,0 +1,56 @@
+/* Conteneur des champs */
+#enmodetips_field {
+    /* Permet d'afficher le champ par dessus la prochaine partie */
+    position: relative;
+    margin: 0 var(--margin) -200px var(--margin);
+    z-index: 10;
+}
+
+/* Champs pour le formulaire d'email */
+#enmodetips_fieldset {
+    background-color: var(--yellow-color);
+    border: none;
+    border-radius: 1rem;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+
+/* Titre de la section */
+#enmodetips_fieldset legend {
+    color: white;
+    -webkit-text-stroke: 2px black;
+    font-size: 3em;
+    font-weight: 900;
+    font-style: italic;
+    text-align: left;
+    margin-left: 3rem;
+}
+
+/* Titre du champ */
+#enmodetips_fieldset h3 {
+    text-align: center;
+    margin: 1.5rem 0;
+}
+
+/* Champ d'email */
+#enmodetips_fieldset_email {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+}
+
+/* Input du champ d'email */
+#enmodetips_fieldset_email input {
+    background-color: var(--yellow-color);
+    display: flex;
+    flex-flow: row nowrap;
+    margin: 0;
+}
+
+/* Texte sous le champ d'email */
+#enmodetips_fieldset p {
+    text-align: center;
+    font-size: 0.8em;
+    margin: 2rem 20%;
+}

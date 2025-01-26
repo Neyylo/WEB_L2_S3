@@ -136,6 +136,14 @@ input[type=email]::placeholder {
     color: var(--red-color);
 }
 
+.white-text {
+    color: white;
+}
+
+.yellow-text {
+    color: var(--yellow-color);
+}
+
 .hashtag-text {
     font-weight: bolder ;
 }
