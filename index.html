@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style/globalStyle.css">
     <link rel="stylesheet" href="./style/enmodetipsField.css">
+    <link rel="stylesheet" href="./style/news.css">
     <link rel="stylesheet" href="./style/brands.css">
     <link rel="stylesheet" href="./style/footer.css">
     <title>Projet Intégration</title>
@@ -49,7 +50,148 @@
     <!-- ------------------------------------------------------>
     <!-- --------------- NEWS AND EVENTS SLIDER -------------->
     <!-- ------------------------------------------------------>
-    <div id="news_and_events_slider"></div>
+    <div id="news">
+        <div id="news_header">
+            <!-- Titre Actus & Bons plans -->
+            <div id="news_title">
+                <h2>Actus &<br><span class="outline-title">bons plans</span></h2>
+            </div>
+            <!-- Éléments interactables -->
+            <div id="news_controls">
+                <!-- Bouton Toutes les actus -->
+                <button id="news_controls_all_button" class="button button-animation whitebg-redfont"><a href="#" class="red-text">Toutes les actus & bons plans</a></button>
+                <!-- Contrôles du slider -->
+                <div id="news_slider_controls">
+                    <!-- Barre de progression du slider -->
+                    <div id="news_slider_controls_bar">
+                        <img src="./img/Ligne 3.svg" alt="" id="news_slider_controls_filler">
+                        <img src="./img/Ligne 4.svg" alt="" id="news_slider_controls_dash">
+                    </div>
+                    <!-- Flèches de direction du slider -->
+                    <div id="news_slider_controls_buttons">
+                        <button id="news_slider_left_arrow" news_slider_change="-1"><img src="/img/Icon%20awesome-arrow-left.svg" alt=""></button>
+                        <button id="news_slider_right_arrow" news_slider_change="1"><img src="/img/Icon%20awesome-arrow-left-1.svg" alt=""></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Slider Actus -->
+        <div id="news_slider">
+            <!-- Slide 1 -->
+            <div class="news_slides" data-img-url="./img/news_slides/slide0.jpg">
+                <!-- Date de la news -->
+                <p class="news_slides_date white-text bold-text">15/02/2023</p>
+                <!-- Titre de la news -->
+                <strong><a href="#" class="white-text">Préparez votre visite</a></strong>
+                <div class="news_slides_tags">
+                    <p class="hashtag-text black-text">#enmode<span class="red-text">découverte</span></p>
+                </div>
+            </div>
+            <!-- Slide 2 -->
+            <div class="news_slides" data-img-url="./img/news_slides/slide1.png">
+                <!-- Date de la news -->
+                <p class="news_slides_date black-text bold-text">11/02/2023</p>
+                <!-- Titre de la news -->
+                <strong><a href="#" class="black-text">PRIMARK ouvre à nom du logo</a></strong>
+                <!-- Tags de la news -->
+                <div class="news_slides_tags">
+                    <p class="hashtag-text black-text">#ouverture</p>
+                    <p class="hashtag-text black-text">#information</p>
+                </div>
+            </div>
+            <!-- Slide 3 -->
+            <div class="news_slides" data-img-url="./img/news_slides/slide2.png">
+                <!-- Date de la news -->
+                <p class="news_slides_date black-text bold-text">09/01/2023</p>
+                <!-- Titre de la news -->
+                <strong><a href="#" class="black-text">Une heure de parking offerte</a></strong>
+                <!-- Tags de la news -->
+                <div class="news_slides_tags">
+                    <p class="hashtag-text black-text">#enmode<span class="red-text">soldes</span></p>
+                    <p class="hashtag-text black-text">#bonsplans</p>
+                </div>
+            </div>
+            <!-- Slide 4 -->
+            <div class="news_slides" data-img-url="./img/news_slides/slide3.png">
+                <!-- Date de la news -->
+                <p class="news_slides_date white-text bold-text">05/12/2022</p>
+                <!-- Titre de la news -->
+                <strong><a href="#" class="white-text">Concours Facebook De nombreux lots à gagner</a></strong>
+                <!-- Tags de la news -->
+                <div class="news_slides_tags">
+                    <p class="hashtag-text white-text">#enmode<span class="yellow-text">concours</span></p>
+                </div>
+            </div>
+            <!-- Slide 5 -->
+            <div class="news_slides" data-img-url="./img/news_slides/slide4.png">
+                <!-- Date de la news -->
+                <p class="news_slides_date white-text bold-text">10/11/2022</p>
+                <!-- Titre de la news -->
+                <strong><a href="#" class="white-text">Protégeons notre planète</a></strong>
+                <!-- Tags de la news -->
+                <div class="news_slides_tags">
+                    <p class="hashtag-text white-text">#enmode<span class="yellow-text">prévention</span></p>
+                </div>
+            </div>
+            <!-- Slide 6 -->
+            <div class="news_slides" data-img-url="./img/news_slides/slide0.jpg">
+                <!-- Date de la news -->
+                <p class="news_slides_date white-text bold-text">15/02/2023</p>
+                <!-- Titre de la news -->
+                <strong><a href="#" class="white-text">Préparez votre visite</a></strong>
+                <!-- Tags de la news -->
+                <div class="news_slides_tags">
+                    <p class="hashtag-text black-text">#enmode<span class="red-text">découverte</span></p>
+                </div>
+            </div>
+            <!-- Slide 7 -->
+            <div class="news_slides" data-img-url="./img/news_slides/slide1.png">
+                <!-- Date de la news -->
+                <p class="news_slides_date black-text bold-text">11/02/2023</p>
+                <!-- Titre de la news -->
+                <strong><a href="#" class="black-text">PRIMARK ouvre à nom du logo</a></strong>
+                <!-- Tags de la news -->
+                <div class="news_slides_tags">
+                    <p class="hashtag-text black-text">#ouverture</p>
+                    <p class="hashtag-text black-text">#information</p>
+                </div>
+            </div>
+            <!-- Slide 8 -->
+            <div class="news_slides" data-img-url="./img/news_slides/slide2.png">
+                <!-- Date de la news -->
+                <p class="news_slides_date black-text bold-text">09/01/2023</p>
+                <!-- Titre de la news -->
+                <strong><a href="#" class="black-text">Une heure de parking offerte</a></strong>
+                <!-- Tags de la news -->
+                <div class="news_slides_tags">
+                    <p class="hashtag-text black-text">#enmode<span class="red-text">soldes</span></p>
+                    <p class="hashtag-text black-text">#bonsplans</p>
+                </div>
+            </div>
+            <!-- Slide 9 -->
+            <div class="news_slides" data-img-url="./img/news_slides/slide3.png">
+                <!-- Date de la news -->
+                <p class="news_slides_date white-text bold-text">05/12/2022</p>
+                <!-- Titre de la news -->
+                <strong><a href="#" class="white-text">Concours Facebook De nombreux lots à gagner</a></strong>
+                <!-- Tags de la news -->
+                <div class="news_slides_tags">
+                    <p class="hashtag-text white-text">#enmode<span class="yellow-text">concours</span></p>
+                </div>
+            </div>
+            <!-- Slide 10 -->
+            <div class="news_slides" data-img-url="./img/news_slides/slide4.png">
+                <!-- Date de la news -->
+                <p class="news_slides_date white-text bold-text">10/11/2022</p>
+                <!-- Titre de la news -->
+                <strong><a href="#" class="white-text">Protégeons notre planète</a></strong>
+                <!-- Tags de la news -->
+                <div class="news_slides_tags">
+                    <p class="hashtag-text white-text">#enmode<span class="yellow-text">prévention</span></p>
+                </div>
+            </div>
+        </div>
+    </div>
     <!-- ------------------------------------------------------>
     <!-- ----------- END NEWS AND EVENTS SLIDER -------------->
     <!-- ------------------------------------------------------>
@@ -193,7 +335,8 @@
     <!-- ------------------------------------------------------>
     <!-- -------------------- END FOOTER --------------------->
     <!-- ------------------------------------------------------>
-
+    
+    <script src="/js/newsSlider.js"></script>
     <script src="js/brands.js"></script>
 </body>
 </html>

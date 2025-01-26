@@ -11,12 +11,15 @@
 body {
     font-family: 'Albert Sans', Arial, sans-serif;
     font-size: 16px;
+    background: url("../img/724d.png") no-repeat center center fixed;
+    background-size: cover;
     margin: 0;
 }
 
 h2 {
     font-family: 'Albert Sans', Arial, sans-serif;
-    font-size: 4em;
+    font-size: 3.5em;
+    font-weight: 900;
     letter-spacing: 0;
     line-height: 3.5rem;
     color: white;
@@ -44,19 +47,19 @@ button {
 }
 
 .button {
-    width: 324px;
-    height: 48px;
+    width: 13rem;
+    height: 2.5rem;
     border-radius: 10px;
     background-color: white;
-    font-size: 20px;
+    font-size: 1em
 }
 
 .card {
-    width: 211px;
-    height: 211px;
+    width: 10rem;
+    height: 10rem;
     border: 5px solid white;
     border-radius: 18px;
-    font-size: 22px;
+    font-size: 1em;
 }
 
 .button-animation {
@@ -131,6 +134,14 @@ input[type=email]::placeholder {
 
 .red-text {
     color: var(--red-color);
+}
+
+.white-text {
+    color: white;
+}
+
+.yellow-text {
+    color: var(--yellow-color);
 }
 
 .hashtag-text {
