@@ -1,33 +1,31 @@
+/* Conteneur du titre et des cartes */
 #shops_cards {
     display: flex;
     flex-flow: column nowrap;
     justify-content: space-between;
-    margin: 20px var(--margin);
+    margin: 6rem var(--margin) 0 var(--margin);
 }
 
+/* Titre de la section et bouton "Toutes les boutiques" */
 #shop_cards_title {
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
-}
-
-#shop_cards_title {
+    align-items: center;
     position: relative;
-    left: -96px;
+    margin: 0 -5rem;
 }
 
-#shop_cards_button {
-    position: relative;
-    top: 150px;
-}
-
+/* Conteneur des cartes boutiques */
 #shop_cards_body {
     display: flex;
     flex-flow: row nowrap;
-    justify-content: space-evenly;
+    justify-content: center;
+    gap: 3rem;
     margin: inherit var(--margin);
 }
 
+/* Cartes des boutiques */
 .shop_cards_buttons {
     padding: 20px 0;
     display: flex;
@@ -38,19 +36,22 @@
     background-color: rgba(0,0,0,0.1);
 }
 
+/* Change la couleur des cartes lors du survol */
 .shop_cards_buttons:hover {
     background-color: var(--red-color);
 }
 
+/* Taille des icônes dans les cartes */
 .shop_cards_buttons img {
-    width: 84px;
-    height: 84px;
-    margin: auto 0;
+    width: 5rem;
+    height: 5rem;
+    margin: auto;
 }
 
+/* Sous-texte Boutiques */
 #shop_cards_bottom_text {
     text-align: center;
     color: white;
-    font-size: 30px;
-    margin-top: 55px;
+    font-size: 1.5em;
+    margin-top: 3.5rem;
 }

@@ -1,7 +1,7 @@
 @import url("https://use.typekit.net/tcb2lfl.css"); /* 'Brush Script MT' font */
 @import url('https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,100..900;1,100..900&display=swap'); /* 'Albert Sans' font */
 
-html {
+:root {
     --red-color : #ec1c24;
     --yellow-color : #f8df00;
     --yellow2-color : #f4e500;
@@ -9,17 +9,33 @@ html {
 }
 
 body {
-    background: url("../img/724d.png") no-repeat fixed center;
-    background-size: cover;
     font-family: 'Albert Sans', Arial, sans-serif;
+    font-size: 16px;
+    background: url("../img/724d.png") no-repeat center center fixed;
+    background-size: cover;
+    margin: 0;
 }
 
 h2 {
     font-family: 'Albert Sans', Arial, sans-serif;
-    font-size: 70px;
+    font-size: 3.5em;
+    font-weight: 900;
     letter-spacing: 0;
-    line-height: 60px;
-    color: #fff;
+    line-height: 3.5rem;
+    color: white;
+}
+
+h3 {
+    font-family: 'Albert Sans', Arial, sans-serif;
+    font-size: 2.5em;
+    font-weight: 900;
+    letter-spacing: 0;
+    line-height: 3.5rem;
+    color: black;
+}
+
+p {
+    font-size: 1em;
 }
 
 button {
@@ -30,22 +46,20 @@ button {
     font-weight: bold;
 }
 
-
-
 .button {
-    width: 324px;
-    height: 48px;
+    width: 13rem;
+    height: 2.5rem;
     border-radius: 10px;
     background-color: white;
-    font-size: 20px;
+    font-size: 1em
 }
 
 .card {
-    width: 211px;
-    height: 211px;
+    width: 10rem;
+    height: 10rem;
     border: 5px solid white;
     border-radius: 18px;
-    font-size: 22px;
+    font-size: 1em;
 }
 
 .button-animation {
@@ -79,5 +93,66 @@ button {
 }
 
 .bold-text {
+    font-weight: bold;
+}
+
+input[type=email] {
+    font-family: 'Albert Sans', Arial, sans-serif;
+    color: black;
+    font-weight: 500;
+    border: 3px solid black;
+    width: 20rem;
+    height: 3rem;
+    border-radius: 90px;
+    padding: 0 0 0 2em;
+}
+
+input[type=email]::placeholder {
+    font-family: 'Albert Sans', Arial, sans-serif;
+    color: black;
+    font-weight: 500;
+}
+
+.email_submit {
+    width: 2rem;
+    height: 2rem;
+    position: relative;
+    top: 2px;
+    left: -3.5rem;
+}
+
+.email_submit img {
+    width: 1.25em;
+    height: 1.25em;
+    transition: translate 0.3s ease-out;
+}
+
+.email_submit:hover img {
+    translate: 0.5rem;
+    transition: translate 0.3s ease-out;
+}
+
+.red-text {
+    color: var(--red-color);
+}
+
+.hashtag-text {
+    font-weight: bolder ;
+}
+
+.italic-text {
+    font-style: italic;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+button {
+    border: none;
+    outline: none;
+    background: none;
+    font-family: 'Albert Sans', Arial, sans-serif;
     font-weight: bold;
 }
