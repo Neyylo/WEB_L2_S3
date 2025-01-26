@@ -1,107 +1,120 @@
+/* Conteneur du footer */
 #footer {
     display: flex;
     flex-flow: column nowrap;
-    padding: 96px var(--margin) 0 var(--margin);
+    justify-content: space-between;
+    padding: 100px var(--margin) 0 var(--margin);
     font-family: 'Albert Sans', 'Arial', sans-serif;
     background-color: white;
 }
 
+/* Contenu du footer */
 #footer_content {
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
 }
 
+/* Titres des catégories du footer */
+#footer_content strong {
+    font-weight: bold;
+    font-size: 1.25em;
+    margin-bottom: 1rem;
+}
+
+/* Logo dans le footer */
 #footer_logo {
+    width: 200px;
     margin-bottom: 100px;
 }
 
+/* Colonnes dans le footer */
 .footer_columns {
     display: flex;
     flex-flow: column nowrap;
 }
 
+/* Catégories du footer */
 .footer_categories {
     display: flex;
     flex-flow: column nowrap;
-    margin-bottom: 35px;
-    font-size: 18px;
-    line-height: 30px;
+    margin-bottom: 2rem;
+    line-height: 1.75rem;
 }
 
+/* Contacts du footer */
 .footer_contact {
-    width: 221px;
-    height: 48px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0.2rem 0.2rem 0.2rem 0.6rem;
     border-style: solid;
     border-width: 3px;
     border-radius: 10px;
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-evenly;
-    align-items: center;
-    font-size: 20px;
-    margin-bottom: 12px;
+    font-size: 1em;
+    margin-bottom: 1rem;
 }
 
+/* Icônes des contacts (mail et téléphone) */
+.footer_contact img {
+    width: 1.25rem;
+    height: 1.25rem;
+}
+
+/* Contact par téléphone */
 #footer_phone {
     border-color: lightgrey;
 }
 
+/* Contact par mail */
 #footer_mail {
     border-color: black;
 }
 
+/* Champ d'email de la newsletter */
 #footer_email {
     display: flex;
     flex-flow: row nowrap;
     align-items: center;
-    margin: 0 0 30px 0;
+    margin: 0 0 2rem 0;
 }
 
-#footer_email button {
-    width: 50px;
-    height: 50px;
-    position: relative;
-    top: 1px;
-    left: -75px;
-}
-
-#footer_email button img {
-    width: 24px;
-    height: 23px;
-    transition: translate 0.3s ease-out;
-}
-
-#footer_email button:hover img {
-    translate: 16px;
-    transition: translate 0.3s ease-out;
-}
-
+/* Conteneur des liens vers les réseaux sociaux */
 #footer_social_networks {
     display: flex;
     flex-flow: row nowrap;
     align-items: center;
     justify-content: left;
-    margin-bottom: 64px;
+    flex-shrink: 0;
+    margin-bottom: 4rem;
 }
 
+/* Texte dans les liens vers les RS */
 #footer_social_networks p {
-    margin-left: 16px;
+    margin: 0 0 0 2rem;
+    font-size: 1.5em;
 }
 
+/* Liens vers les RS */
 #footer_social_networks a {
-    margin-right: 16px;
+    margin-right: 0.5rem;
 }
 
+/* Icônes des liens vers les RS */
 #footer_social_networks a img {
+    width: 2rem;
+    height: 2rem;
     transition: 0.3s ease translate;
 }
 
+/* Animation des icônes lors du survol des liens */
 #footer_social_networks a:hover img {
-    translate: 0 -10px;
+    translate: 0 -0.5rem;
     transition: 0.3s ease translate;
 }
 
+/* Mentions légales & CGU */
 #footer_legals {
     display: flex;
     flex-flow: row nowrap;
