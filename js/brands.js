@@ -1,5 +1,5 @@
 // Récupère le slider, définie les variables.
-const slider = document.querySelector('#brands_scrollbar');
+const brands_slider = document.querySelector('#brands_scrollbar');
 let mouseDown = false;
 let startX, scrollLeft;
 
@@ -10,8 +10,8 @@ let startX, scrollLeft;
  */
 let startDragging = function (event) {
     mouseDown = true;
-    startX = event.pageX - slider.offsetLeft;
-    scrollLeft = slider.scrollLeft;
+    startX = event.pageX - brands_slider.offsetLeft;
+    scrollLeft = brands_slider.scrollLeft;
 };
 
 /** Lorsque l'on arrête de faire glisser le slider,
@@ -26,18 +26,18 @@ let stopDragging = function (event) {
  *  si oui, on récupère la position de la souris par rapport au slider,
  *  et on définit le scroll du slider en fonction de la nouvelle position de la souris.
  */
-slider.addEventListener('mousemove', (e) => {
+brands_slider.addEventListener('mousemove', (e) => {
     if(!mouseDown) {
         return;
     }
-    const x = e.pageX - slider.offsetLeft;
+    const x = e.pageX - brands_slider.offsetLeft;
     const scroll = x - startX;
-    slider.scrollLeft = scrollLeft - scroll;
+    brands_slider.scrollLeft = scrollLeft - scroll;
 });
 
 // Lorsqu'on clique sur le slider, on commence à le faire glisser.
-slider.addEventListener('mousedown', startDragging, false);
+brands_slider.addEventListener('mousedown', startDragging, false);
 // Lorsqu'on arrête de cliquer sur le slider, on arrête de le faire glisser.
-slider.addEventListener('mouseup', stopDragging, false);
+brands_slider.addEventListener('mouseup', stopDragging, false);
 // Lorsqu'on quitte la zone du slider, on arrête aussi de le faire glisser.
-slider.addEventListener('mouseleave', stopDragging, false);
+brands_slider.addEventListener('mouseleave', stopDragging, false);
