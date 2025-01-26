@@ -1,17 +1,16 @@
 /* Conteneur principal */
 #news {
     background-color: var(--red-color);
-    padding: 30px 10vw 120px 10vw;
+    padding: 0 10vw 120px 10vw;
     display: flex;
     flex-flow: column nowrap;
-    overflow: hidden;
+    overflow-x: hidden;
 }
 
 /* Conteneur du titre et des contrôles */
 #news_header {
     display: flex;
     flex-flow: row nowrap;
-    margin-bottom: 64px;
     align-items: center;
     justify-content: space-between;
     gap: 96px;
@@ -25,7 +24,7 @@
 /* Titre décalé */
 #news_title h2 span{
     position: relative;
-    left: 64px;
+    left: 4rem;
 }
 
 /* Contrôles de la section */
@@ -36,36 +35,47 @@
     align-items: end;
 }
 
+/* Bouton "Toutes les actus & bons plans" */
+#news_controls_all_button {
+    width: 16rem;
+}
+
 /* Contrôles du slider */
 #news_slider_controls {
     display: flex;
     flex-flow: row nowrap;
     flex-grow: 1;
     width: 100%;
-    margin-top: 32px;
+    margin-top: 2rem;
 }
 
-/* Flèches du slider */
+/* Boutons d'action du slider */
 #news_slider_controls div {
     display: flex;
     flex-shrink: 0;
 }
 
+/* Icônes des boutons du slider */
+#news_slider_controls div img {
+    width: 1rem;
+}
+
 /* Barre de progression du slider */
 #news_slider_controls input[type="range"] {
     flex-grow: 1;
-    margin-right: 16px;
+    margin-right: 1rem;
 }
 
 /* Slider */
 #news_slider {
+    margin-left: -7.5vw;
     width: max-content;
-    transition: 0.3s ease transform;
     display: flex;
     flex-flow: row nowrap;
     align-items: center;
     justify-content: space-between;
-    gap: 38px;
+    gap: 2rem;
+    transition: 0.3s ease transform;
 }
 
 /* Images dans les slides */
@@ -75,8 +85,8 @@
 
 /* Slides */
 .news_slides {
-    width: 385px;
-    height: 632px;
+    width: 16rem;
+    height: 28rem;
     display: flex;
     flex-flow: column wrap;
     align-items: flex-start;
@@ -84,15 +94,14 @@
     border-radius: 16px;
     background-color: lightgrey;
     background-size: cover;
-    font-size: 20px;
     padding: 21px 25px 21px 50px;
 }
 
 /* Titre des slides */
 .news_slides strong {
-    font-size: 32px;
-    line-height: 40px;
-    margin-right: 16px;
+    font-size: 1.5em;
+    line-height: 1em;
+    margin-right: 2rem;
 }
 
 /* Tags des slides */
