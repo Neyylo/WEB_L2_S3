@@ -8,11 +8,16 @@ const news_slide_count = news_slides.length - 1;
 const news_width = news_slider.offsetWidth;
 // Flèches de contrôle du slider
 const news_buttons = document.querySelectorAll("#news_slider_controls button");
-// Barre de progression du slider
-const news_range = document.querySelector("#news_slider_controls input[type=range]");
+// Tiret de la barre de progression du slider
+const news_dash = document.querySelector("#news_slider_controls_dash");
+// Fond du tiret de la barre de progression du slider
+const news_filler = document.querySelector("#news_slider_controls_filler");
 
 // Indice de la slide actuelle
 let news_current_index = 0;
+
+// Change la largeur du trait pour s'adapter au nombre de slide
+news_dash.style.width = 100/(news_slide_count+1) + "%";
 
 /**
  * Translate le slider jusqu'à l'indice en fonction du nombre de slides et de sa largeur
@@ -22,7 +27,7 @@ function slide(index) {
     if (index < 0) index = 0;
     else if (index >= news_slide_count) index = news_slide_count;
     news_slider.style.transform = "translateX(-" + index/(news_slide_count+1) * news_width + "px)";
-    news_range.value = index/news_slide_count * 100;
+    news_dash.style.transform = "translateX(" + news_filler.offsetWidth * index/(news_slide_count+1) + "px)";
     news_current_index = index;
 }
 

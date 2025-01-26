@@ -61,9 +61,12 @@
                 <!-- Contrôles du slider -->
                 <div id="news_slider_controls">
                     <!-- Barre de progression du slider -->
-                    <input type="range" min="0" max="100" value="0" id="news_slider_range" disabled>
+                    <div id="news_slider_controls_bar">
+                        <img src="./img/Ligne 3.svg" alt="" id="news_slider_controls_filler">
+                        <img src="./img/Ligne 4.svg" alt="" id="news_slider_controls_dash">
+                    </div>
                     <!-- Flèches de direction du slider -->
-                    <div>
+                    <div id="news_slider_controls_buttons">
                         <button id="news_slider_left_arrow" news_slider_change="-1"><img src="/img/Icon%20awesome-arrow-left.svg" alt=""></button>
                         <button id="news_slider_right_arrow" news_slider_change="1"><img src="/img/Icon%20awesome-arrow-left-1.svg" alt=""></button>
                     </div>

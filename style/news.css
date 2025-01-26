@@ -44,19 +44,47 @@
 #news_slider_controls {
     display: flex;
     flex-flow: row nowrap;
+    align-items: center;
+    justify-content: right;
     flex-grow: 1;
     width: 100%;
     margin-top: 2rem;
 }
 
+/* Barre de progression du slider */
+#news_slider_controls_bar {
+    display: grid;
+    position: relative;
+    user-select: none;
+}
+
+/* Images de la barre de progression du slider */
+#news_slider_controls_bar img {
+    grid-area: 1 / 1;
+    height: 6px;
+}
+
+/* Trait indiquant la progression du slider */
+#news_slider_controls_dash {
+    width: 10%;
+    transform: translateX(0);
+    transition: transform 0.2s ease-out;
+}
+
+/* Fond du trait indiquant la progression du slider */
+#news_slider_controls_filler {
+    width: 100%;
+}
+
 /* Boutons d'action du slider */
-#news_slider_controls div {
+#news_slider_controls_buttons {
     display: flex;
     flex-shrink: 0;
+    margin-left: 1rem;
 }
 
 /* Icônes des boutons du slider */
-#news_slider_controls div img {
+#news_slider_controls_buttons img {
     width: 1rem;
 }
 
