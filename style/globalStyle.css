@@ -118,8 +118,11 @@ strong {
 
 .hashtag-text {
     font-weight: bolder ;
-    font-style: italic;
     font-size: 28px;
+}
+
+.italic-text {
+    font-style: italic;
 }
 
 a {
