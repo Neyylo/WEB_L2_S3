@@ -30,6 +30,8 @@
 
 #brands_scrollbar img {
     transition: 0.3s transform ease;
+    width: 211px;
+    height: 211px;
 }
 
 #brands_scrollbar img:hover {
