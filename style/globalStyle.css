@@ -11,15 +11,22 @@
 body {
     font-family: 'Albert Sans', Arial, sans-serif;
     font-size: 16px;
+<<<<<<< HEAD
     background: url("../img/724d.png") no-repeat center center fixed;
     background-size: cover;
+=======
+>>>>>>> main
     margin: 0;
 }
 
 h2 {
     font-family: 'Albert Sans', Arial, sans-serif;
+<<<<<<< HEAD
     font-size: 3.5em;
     font-weight: 900;
+=======
+    font-size: 4em;
+>>>>>>> main
     letter-spacing: 0;
     line-height: 3.5rem;
     color: white;
@@ -27,17 +34,24 @@ h2 {
 
 h3 {
     font-family: 'Albert Sans', Arial, sans-serif;
+<<<<<<< HEAD
     font-size: 2.5em;
+=======
+    font-size: 3em;
+>>>>>>> main
     font-weight: 900;
     letter-spacing: 0;
     line-height: 3.5rem;
     color: black;
 }
 
+<<<<<<< HEAD
 p {
     font-size: 1em;
 }
 
+=======
+>>>>>>> main
 button {
     border: none;
     outline: none;
@@ -47,6 +61,7 @@ button {
 }
 
 .button {
+<<<<<<< HEAD
     width: 13rem;
     height: 2.5rem;
     border-radius: 10px;
@@ -60,6 +75,21 @@ button {
     border: 5px solid white;
     border-radius: 18px;
     font-size: 1em;
+=======
+    width: 324px;
+    height: 48px;
+    border-radius: 10px;
+    background-color: white;
+    font-size: 20px;
+}
+
+.card {
+    width: 211px;
+    height: 211px;
+    border: 5px solid white;
+    border-radius: 18px;
+    font-size: 22px;
+>>>>>>> main
 }
 
 .button-animation {
@@ -101,7 +131,11 @@ input[type=email] {
     color: black;
     font-weight: 500;
     border: 3px solid black;
+<<<<<<< HEAD
     width: 20rem;
+=======
+    width: 15rem;
+>>>>>>> main
     height: 3rem;
     border-radius: 90px;
     padding: 0 0 0 2em;
@@ -136,6 +170,7 @@ input[type=email]::placeholder {
     color: var(--red-color);
 }
 
+<<<<<<< HEAD
 .white-text {
     color: white;
 }
@@ -144,6 +179,8 @@ input[type=email]::placeholder {
     color: var(--yellow-color);
 }
 
+=======
+>>>>>>> main
 .hashtag-text {
     font-weight: bolder ;
 }
