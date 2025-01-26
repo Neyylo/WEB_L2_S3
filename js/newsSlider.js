@@ -21,6 +21,7 @@ news_dash.style.width = 100/(news_slide_count+1) + "%";
 
 /**
  * Translate le slider jusqu'à l'indice en fonction du nombre de slides et de sa largeur
+ * et translate également le trait de progression jusqu'à la prochaine position.
  * @param index indice de la slide à laquelle glisser
  */
 function slide(index) {
