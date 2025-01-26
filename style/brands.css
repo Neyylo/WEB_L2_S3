@@ -10,6 +10,8 @@
     overflow-x: auto;
     padding: 26px;
     cursor: grab;
+    /* Désactive la possibilité de sélectionner les éléments de la scrollbar */
+    user-select: none;
 }
 
 /* Affiche une main fermée lorsque la scrollbar est sélectionnée */
