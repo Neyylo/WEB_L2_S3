@@ -11,6 +11,11 @@
     justify-content: space-between;
 }
 
+#shop_cards_title {
+    position: relative;
+    left: -96px;
+}
+
 #shop_cards_button {
     position: relative;
     top: 150px;
