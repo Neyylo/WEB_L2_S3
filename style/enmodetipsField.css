@@ -1,5 +1,8 @@
+/* Permet d'afficher le champ par dessus la prochaine partie */
 #enmodetips_field {
-    margin: 0 var(--margin);
+    position: relative;
+    margin: 0 var(--margin) -200px var(--margin);
+    z-index: 10;
 }
 
 #enmodetips_fieldset {
