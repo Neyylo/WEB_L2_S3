@@ -6,10 +6,18 @@
 #brands_scrollbar {
     display: flex;
     flex-flow: row nowrap;
+    /* Permet "d'afficher" une scrollbar */
     overflow-x: auto;
     padding: 26px;
+    cursor: grab;
 }
 
+/* Affiche une main fermée lorsque la scrollbar est sélectionnée */
+#brands_scrollbar:active {
+    cursor: grabbing;
+}
+
+/* Empêche l'affichage de la scrollbar par défaut */
 #brands_scrollbar::-webkit-scrollbar {
     display: none;
 }
