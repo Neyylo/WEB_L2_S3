@@ -39,6 +39,17 @@ button {
     font-weight: bold;
 }
 
+strong {
+    font-weight: bold;
+    font-size: 24px;
+    margin-bottom: 16px;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
 .button {
     width: 324px;
     height: 48px;
@@ -65,19 +76,19 @@ button {
     color: var(--red-color);
 }
 
-strong {
-    font-weight: bold;
-    font-size: 24px;
-    margin-bottom: 16px;
+.yellow-text {
+    color: var(--yellow-color);
+}
+
+.white-text {
+    color: white;
+}
+
+.black-text {
+    color: black;
 }
 
 .hashtag-text {
-    font-weight: bolder ;
-    font-style: italic;
-    font-size: 28px;
-}
+    font-weight: bold ;
 
-a {
-    color: black;
-    text-decoration: none;
 }
