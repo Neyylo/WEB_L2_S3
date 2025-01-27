@@ -3,13 +3,21 @@
 #main_slider {
     width: 100%;
     height: 650px; /* Hauteur totale slider */
+<<<<<<< HEAD
+    background-color: var(--red-color);
+=======
     background-color: red;
+>>>>>>> main
     display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
     overflow: hidden;
     padding-top: 180px;
+<<<<<<< HEAD
+    padding-bottom: 100px;
+=======
+>>>>>>> main
 }
 
 /* Container slider */

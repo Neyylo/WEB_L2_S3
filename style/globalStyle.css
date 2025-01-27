@@ -8,7 +8,10 @@
     --margin : 15vw;
 }
 
+<<<<<<< HEAD
+=======
 
+>>>>>>> main
 body {
     font-family: 'Albert Sans', Arial, sans-serif;
     font-size: 16px;
@@ -52,7 +55,11 @@ button {
     height: 2.5rem;
     border-radius: 10px;
     background-color: white;
+<<<<<<< HEAD
+    font-size: 1em;
+=======
     font-size: 1em
+>>>>>>> main
 }
 
 .card {
@@ -146,7 +153,11 @@ input[type=email]::placeholder {
 }
 
 .hashtag-text {
+<<<<<<< HEAD
+    font-weight: bolder;
+=======
     font-weight: bolder ;
+>>>>>>> main
 }
 
 .italic-text {
@@ -158,6 +169,11 @@ a {
     text-decoration: none;
 }
 
+<<<<<<< HEAD
+.red-background-wrapper {
+    background-color: var(--red-color);
+}
+=======
 button {
     border: none;
     outline: none;
@@ -165,3 +181,4 @@ button {
     font-family: 'Albert Sans', Arial, sans-serif;
     font-weight: bold;
 }
+>>>>>>> main
