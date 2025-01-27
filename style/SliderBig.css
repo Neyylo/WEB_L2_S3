@@ -1,11 +1,4 @@
-@import url("https://use.typekit.net/tcb2lfl.css"); /* 'Brush Script MT' font */
-@import url('https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,100..900;1,100..900&display=swap'); /* 'Albert Sans' font */
 
-html {
-    --red-color : #ec1c24;
-    --yellow-color : #f8df00;
-    --yellow2-color : #f4e500;
-}
 /* Main Slider */
 #main_slider {
     width: 100%;
