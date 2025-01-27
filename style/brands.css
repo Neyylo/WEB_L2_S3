@@ -1,0 +1,39 @@
+/* Conteneur de la scrollbar des marques */
+#brands {
+    background-color: var(--red-color);
+    padding-top: 200px;
+}
+
+/* Scrollbar contenant les marques */
+#brands_scrollbar {
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 1.25rem;
+    /* Permet "d'afficher" une scrollbar */
+    overflow-x: auto;
+    padding: 3rem 1.25rem;
+    cursor: grab;
+    /* Désactive la possibilité de sélectionner les éléments de la scrollbar */
+    user-select: none;
+}
+
+/* Affiche une main fermée lorsque la scrollbar est sélectionnée */
+#brands_scrollbar:active {
+    cursor: grabbing;
+}
+
+/* Empêche l'affichage de la scrollbar par défaut */
+#brands_scrollbar::-webkit-scrollbar {
+    display: none;
+}
+
+#brands_scrollbar img {
+    transition: 0.3s transform ease;
+    width: 10rem;
+    height: 10rem;
+}
+
+#brands_scrollbar img:hover {
+    transform: scale(1.1);
+    transition: 0.3s transform ease;
+}
