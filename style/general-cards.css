@@ -4,7 +4,7 @@
     flex-flow: column nowrap;
     align-items: center;
     justify-content: center;
-    min-height: 100vh; /* Prend minimum toute la hauteur écran */
+    min-height: auto; /* Prend minimum toute la hauteur écran */
     margin: 0;
     padding: 0;
 }
@@ -17,8 +17,8 @@
     align-items: center;
     gap: 35px; /* Espace entre cartes */
     margin: 0;
-    padding: 80px 0 100px 0; /* Espacement haut et bas section rouge */
-    background-color: #E4001B;
+    padding: 40px 0 60px 0; /* Espacement haut et bas section rouge */
+    background-color: var(--red-color);
     width: 100vw; /* Prend toute largeur écran */
     min-height: 50vh; /* Hauteur minimum de 50% de l'écran */
 }

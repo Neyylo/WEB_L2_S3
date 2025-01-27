@@ -1,0 +1,148 @@
+/* Import des polices */
+@import url('https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Variables */
+:root {
+    --yellow-color: #f8df00;
+}
+
+/* Bandeau noir */
+#SpecialAnnouncement {
+    position: fixed;
+    top: 100px; /* Positionné juste en dessous du header (hauteur du header) */
+    width: 100%; /* Prend toute la largeur de la fenêtre */
+    z-index: 1000; /* S'affiche en dessous du header */
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 12px 0;
+    font-family: 'Albert Sans', sans-serif;
+    font-size: 16px;
+}
+
+/* Header */
+header {
+    position: fixed;
+    z-index: 1000; /* Met le header au-dessus du bandeau */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 40px;
+    height: 100px;
+    width: 97%; /* Prend toute la largeur de la fenêtre */
+    background-color: white;
+}
+
+
+
+#Logo {
+    width: 221px;
+    height: 91px;   
+}
+
+.HeaderLinks {
+    display: flex;                
+    gap: 60px; /* Grand espace entre les liens */              
+    align-items: center; /* Alignement vertical au centre */
+}
+
+.HeaderLinks a {
+    font-family: 'Albert Sans', sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+    text-decoration: none;
+    color: black;
+    white-space: nowrap;
+}
+
+/* Bouton des horaires */
+.yellow-btn {
+    background-color: var(--yellow-color);
+    border: none;
+    padding: 12px 20px;
+    border-radius: 5px;
+    font-family: 'Albert Sans', sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 0 30px;
+    white-space: nowrap;
+}
+
+/* Dropdown des horaires */
+#hoursDropdown {
+    position: fixed;
+    top: calc(100px + 12px); /* Ajusté pour s’afficher sous le header */
+    right: 40px; /* Aligné avec le bouton jaune */
+    background-color: white;
+    padding: 15px;
+    border: 1px solid #e0e0e0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    z-index: 1001;
+    min-width: 180px;
+    opacity: 0; /* Caché par défaut */
+    transform: translateY(-10px);
+    pointer-events: none; /* Désactive les interactions quand caché */
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    max-height: 300px;  /* Ajuste cette valeur à ton besoin */
+    overflow-y: auto;
+}
+
+#hoursDropdown.show {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto; /* Interaction activée */
+}
+
+/* Barre de recherche */
+#searchBar {
+    display: flex;
+    align-items: center;
+    position: relative;
+    gap: 15px;
+    transition: width 0.3s ease; /* Transition fluide */
+}
+
+#searchInput {
+    flex: 0; /* N’occupe pas d’espace au départ */
+    max-width: 0;
+    overflow: hidden;
+    opacity: 0;
+    padding: 8px 12px;
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+    transition: max-width 0.3s ease, opacity 0.3s ease;
+    font-family: 'Albert Sans', sans-serif;
+}
+
+#searchInput.expanded {
+    flex: 1; /* Étend l’espace utilisé */
+    max-width: 200px; /* Largeur maximum définie */
+    opacity: 1;
+}
+
+/* Icone de loupe */
+#searchIcon {
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+#searchIcon img {
+    width: 24px;
+    height: 24px;
+}
+
+/* Bandeau noir */
+#SpecialAnnouncement {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 12px 0;
+    font-family: 'Albert Sans', sans-serif;
+    font-size: 16px;
+}
