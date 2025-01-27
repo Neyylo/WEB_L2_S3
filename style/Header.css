@@ -6,15 +6,34 @@
     --yellow-color: #f8df00;
 }
 
+/* Bandeau noir */
+#SpecialAnnouncement {
+    position: fixed;
+    top: 100px; /* Positionné juste en dessous du header (hauteur du header) */
+    width: 100%; /* Prend toute la largeur de la fenêtre */
+    z-index: 1000; /* S'affiche en dessous du header */
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 12px 0;
+    font-family: 'Albert Sans', sans-serif;
+    font-size: 16px;
+}
+
 /* Header */
 header {
-    display: flex;              
-    align-items: center;         
-    justify-content: space-between; 
-    padding: 0 40px;             
-    height: 100px;              
-    background-color: white;     
+    position: fixed;
+    z-index: 1000; /* Met le header au-dessus du bandeau */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 40px;
+    height: 100px;
+    width: 97%; /* Prend toute la largeur de la fenêtre */
+    background-color: white;
 }
+
+
 
 #Logo {
     width: 221px;
@@ -52,7 +71,7 @@ header {
 
 /* Dropdown des horaires */
 #hoursDropdown {
-    position: absolute;
+    position: fixed;
     top: calc(100px + 12px); /* Ajusté pour s’afficher sous le header */
     right: 40px; /* Aligné avec le bouton jaune */
     background-color: white;
@@ -60,12 +79,14 @@ header {
     border: 1px solid #e0e0e0;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 5px;
-    z-index: 1000;
+    z-index: 1001;
     min-width: 180px;
     opacity: 0; /* Caché par défaut */
     transform: translateY(-10px);
     pointer-events: none; /* Désactive les interactions quand caché */
     transition: opacity 0.3s ease, transform 0.3s ease;
+    max-height: 300px;  /* Ajuste cette valeur à ton besoin */
+    overflow-y: auto;
 }
 
 #hoursDropdown.show {
