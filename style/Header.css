@@ -29,7 +29,7 @@ header {
     justify-content: space-between;
     padding: 0 40px;
     height: 100px;
-    width: 97%; /* Prend toute la largeur de la fenêtre */
+    width: 98%; /* Prend toute la largeur de la fenêtre */
     background-color: white;
 }
 
