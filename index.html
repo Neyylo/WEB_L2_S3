@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="style/footer.css">
     <link rel="stylesheet" href="style/SliderBig.css">
     <link rel="stylesheet" href="style/FloatingSN.css">
+    <link rel="stylesheet" href="style/Header.css">
     <title>Projet Intégration</title>
 
 </head>
@@ -18,7 +19,38 @@
     <!-- ------------------------------------------------------>
     <!-- ---------------------- HEADER ------------------------>
     <!-- ------------------------------------------------------>
-    <div id="header"></div>
+    <div id="header">
+        <header>
+            <div id="Logo">
+                 <a href="./index.html"><img id="Logo" src="./img/logo.png" alt="LOGO"></a>
+            </div>
+            <nav class="HeaderLinks">
+                <a href="#">Boutiques & Restaurants</a>
+                <a href="#">Actus & Bons plans</a>
+                <a href="#">Infos pratiques</a>
+            </nav>
+            <button id="toggleHours" class="yellow-btn">OUVERT - 9:30 à 19:30</button>
+            <div id="searchBar">
+                <button id="searchIcon"><img src="./img/Icon feather-search.svg" alt="Recherche"></button>
+                <input type="text" id="searchInput" placeholder="Rechercher...">
+            </div>
+        </header>
+        <div id="hoursDropdown" class="hidden">
+                    <p>Lundi : 9:30 - 19:30</p>
+                    <p>Mardi : 9:30 - 19:30</p>
+                    <p>Mercredi : 9:30 - 19:30</p>
+                    <p>Jeudi : 9:30 - 19:30</p>
+                    <p>Vendredi : 9:30 - 19:30</p>
+                    <p>Samedi : 9:30 - 19:30</p>
+                    <p>Dimanche : Fermé</p>
+        </div>    
+        
+    </div>
+    
+    <!-- Special Announcement -->
+    <div id="SpecialAnnouncement">
+        Ouverture exceptionnelle le dimanche 12 février pour la Saint-Valentin
+    </div>
     <!-- ------------------------------------------------------>
     <!-- -------------------- END HEADER --------------------->
     <!-- ------------------------------------------------------>
@@ -402,5 +434,6 @@
     <script src="js/newsSlider.js"></script>
     <script src="js/brands.js"></script>
     <script src="js/SliderBig.js"></script>
+    <script src="js/Header.js"></script>
 </body>
 </html>
