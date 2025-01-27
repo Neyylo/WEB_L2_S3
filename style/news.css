@@ -1,0 +1,142 @@
+/* Conteneur principal */
+#news {
+    background-color: var(--red-color);
+    padding: 0 10vw 120px 10vw;
+    display: flex;
+    flex-flow: column nowrap;
+    overflow-x: hidden;
+}
+
+/* Conteneur du titre et des contrôles */
+#news_header {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 96px;
+}
+
+/* Titre */
+#news_title {
+    flex-shrink: 0;
+}
+
+/* Titre décalé */
+#news_title h2 span{
+    position: relative;
+    left: 4rem;
+}
+
+/* Contrôles de la section */
+#news_controls {
+    display: flex;
+    flex-flow: column nowrap;
+    flex-grow: 1;
+    align-items: end;
+}
+
+/* Bouton "Toutes les actus & bons plans" */
+#news_controls_all_button {
+    width: 16rem;
+}
+
+/* Contrôles du slider */
+#news_slider_controls {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: right;
+    flex-grow: 1;
+    width: 100%;
+    margin-top: 2rem;
+}
+
+/* Barre de progression du slider */
+#news_slider_controls_bar {
+    display: grid;
+    position: relative;
+    user-select: none;
+}
+
+/* Images de la barre de progression du slider */
+#news_slider_controls_bar img {
+    grid-area: 1 / 1;
+    height: 6px;
+}
+
+/* Trait indiquant la progression du slider */
+#news_slider_controls_dash {
+    width: 10%;
+    transform: translateX(0);
+    transition: transform 0.2s ease-out;
+}
+
+/* Fond du trait indiquant la progression du slider */
+#news_slider_controls_filler {
+    width: 100%;
+}
+
+/* Boutons d'action du slider */
+#news_slider_controls_buttons {
+    display: flex;
+    flex-shrink: 0;
+    margin-left: 1rem;
+}
+
+/* Icônes des boutons du slider */
+#news_slider_controls_buttons img {
+    width: 1rem;
+}
+
+/* Barre de progression du slider */
+#news_slider_controls input[type="range"] {
+    flex-grow: 1;
+    margin-right: 1rem;
+}
+
+/* Slider */
+#news_slider {
+    margin-left: -7.5vw;
+    width: max-content;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+    transition: 0.3s ease transform;
+}
+
+/* Images dans les slides */
+#news_slider img {
+    position: relative;
+}
+
+/* Slides */
+.news_slides {
+    width: 16rem;
+    height: 28rem;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: flex-start;
+    justify-content: flex-end;
+    border-radius: 16px;
+    background-color: lightgrey;
+    background-size: cover;
+    padding: 21px 25px 21px 50px;
+}
+
+/* Titre des slides */
+.news_slides strong {
+    font-size: 1.5em;
+    line-height: 1em;
+    margin-right: 2rem;
+}
+
+/* Tags des slides */
+.news_slides_tags {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: start;
+    justify-content: space-between;
+    gap: 16px;
+}

@@ -1,3 +1,5 @@
+https://xd.adobe.com/view/bd6f061d-30aa-47fa-a2d6-60f421c148ef-e83c/
+
 # Projet Intégration - Compte rendu
 
 ## 1. Orgasination du projet
@@ -9,7 +11,7 @@ Branches :
 - Header: Nolan
 - Floating SN: Nolan
 - Slider Big: Nolan
-- General Cards: Nolan
+- Informational Cards: Nolan
 - Slider Actus & Bons plans: Nolan
 - Boutique Cards: Martin
 - #enmodetips Field: Martin
